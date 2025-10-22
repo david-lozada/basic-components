@@ -1,0 +1,49 @@
+html, body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+article {
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 5%;
+	width: 60vw;
+	height: 60vh;
+}
+
+article > .tabs {
+	display: flex;
+	justify-content: space-around;
+	border-radius: 20px;
+}
+
+.tab-button {
+	flex-grow: 1;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 1.2em;
+	color: gray;
+	background-color: #f0f0f0;
+}
+
+.active {
+	color: #363636;
+	border-bottom: 3px solid #363636;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+.tab-content {
+	display: none;
+	margin-top: 20px;
+	font-size: 1em;
+	color: #333;
+}
+.visible {
+	display: block;
+}
